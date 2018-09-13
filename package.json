@@ -1,0 +1,54 @@
+{
+    "name": "spotify-silent-party-frontend",
+    "version": "1.0.0",
+    "description": "App that allows you to sync playback of several premium users together via network, creating silent party",
+    "main": "server.js",
+    "scripts": {
+        "test": "jest",
+        "start": "nodemon server.js",
+        "watch": "start \"webpack\" call \"node_modules/.bin/webpack.cmd\" --config webpack.config.js -w",
+        "build": "webpack --config webpack.config.js -p"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/maciejewiczow/spotify-silent-party-frontend.git"
+    },
+    "keywords": [
+        "Spotify",
+        "playback",
+        "sync"
+    ],
+    "author": "Maciej Adamus",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/maciejewiczow/spotify-silent-party-frontend/issues"
+    },
+    "homepage": "https://github.com/maciejewiczow/spotify-silent-party-frontend#readme",
+    "devDependencies": {
+        "@types/bluebird": "^3.5.23",
+        "@types/react": "^16.4.7",
+        "@types/react-dom": "^16.0.6",
+        "@types/react-redux": "^6.0.5",
+        "@types/socket.io-client": "^1.4.32",
+        "@types/uuid": "^3.4.3",
+        "typescript": "^2.9.2",
+        "ts-loader": "^4.4.1",
+        "webpack": "^4.12.0",
+        "webpack-cli": "^3.0.8"
+    },
+    "dependencies": {
+        "bluebird": "^3.5.1",
+        "body-parser": "^1.18.3",
+        "compression": "^1.7.3",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.3",
+        "helmet": "^3.13.0",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "react-redux": "^5.0.7",
+        "redux": "^4.0.0",
+        "redux-thunk": "^2.3.0",
+        "socket.io-client": "^2.1.1",
+        "spotify-web-api-js": "^1.1.1"
+    }
+}
